@@ -12,24 +12,33 @@
     <p>Forms in HTML are used to capture data from the user.</p>
     <p>Sign Up Form</p>
     <!-- <form onsubmit="submitForm(); return false;"> -->
-    <form onsubmit="submitForm();">
+    <form onsubmit="submitForm(); return false">
 
         <input type="text" name="username" placeholder="Username" minlength="4" maxlength="8" required />
         <br />
         <input type="number" name="phone" placeholder="phone" required />
         <br />
-        <input type="number" name="anotherphone" placeholder="Another phone">
+        <input type="number" name="anotherphone" placeholder="Another phone" />
         <br />
         <input type="email" name="email" placeholder="email" required />
         <br />
         <input type="password" name="password" placeholder="Password" minlength="4" maxlength="8" required />
         <br />
-        <input type="submit" name="submit" value="Sign Up" />
+        <label for="education">Education</label>
+        <select id="education" name="Education">
+            <option value="Engineering">Engineering</option>
+            <option value="Science">Science</option>
+            <option value="Computers">Computers</option>
+            <option value="Other">Other</option>
+        </select>
+        <br />
+        <button type="submit">Sign Up</button>
     </form>
 
     <script>
+        console.log('Started');
         const submitForm = () => {
-            console.log(document.getElementsByName(username));
+            console.log('Submitted');
         };
     </script>
 
