@@ -11,16 +11,18 @@
     <hr />
     <p>Forms in HTML are used to capture data from the user.</p>
     <p>Sign Up Form</p>
-    <form action="submitForm(); return false;">
-        <input type="text" name="username" placeholder="Username" />
+    <!-- <form onsubmit="submitForm(); return false;"> -->
+    <form onsubmit="submitForm();">
+
+        <input type="text" name="username" placeholder="Username" minlength="4" maxlength="8" required />
         <br />
-        <input type="number" name="phone" placeholder="phone" />
+        <input type="number" name="phone" placeholder="phone" required />
         <br />
         <input type="number" name="anotherphone" placeholder="Another phone">
         <br />
-        <input type="email" name="email" placeholder="email" />
+        <input type="email" name="email" placeholder="email" required />
         <br />
-        <input type="password" name="password" placeholder="Password" />
+        <input type="password" name="password" placeholder="Password" minlength="4" maxlength="8" required />
         <br />
         <input type="submit" name="submit" value="Sign Up" />
     </form>
