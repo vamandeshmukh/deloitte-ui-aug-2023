@@ -5,14 +5,12 @@
 }
 
 /* id selector  */
-
 #orange-style {
     color: orange;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* element selector */
-
 h4 {
     color: blueviolet;
     font-family: monospace;
