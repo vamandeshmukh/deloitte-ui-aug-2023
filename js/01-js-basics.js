@@ -58,13 +58,13 @@
 // Reference datatypes in JS 
 // array, object, class, function etc 
 
-let arr1 = [10, 20, 'abc', 'def', false, 10.5];
+// let arr1 = [10, 20, 'abc', 'def', false, 10.5];
 
-console.log(arr1[2]);
+// console.log(arr1[2]);
 
-console.log('all the elements - ');
+// console.log('all the elements - ');
 
-console.log(arr1);
+// console.log(arr1);
 
 
 // self-learning assignment for JS - 
@@ -75,8 +75,54 @@ console.log(arr1);
 // how to access array elemets 
 // operators in JS and their behaviour 
 
+// let num;
+// console.log(num);
+// console.log(typeof (num));
+
+// num = 10;
+// console.log(num);
+// console.log(typeof (num));
+
+// console.log(20 + 10);
+// console.log(20 + '10');
+// console.log(20 - 10);
+// console.log(20 - '10');
+// console.log(20 - 'abc');
+
+// num = null;
+
+// console.log(10 / 3);
+// console.log(10 % 3);
+
+// console.log(Math.floor(10 / 3));
 
 
+// console.log(10 == 10); // true 
+// console.log(10 == '10'); // true 
+// console.log(10 === '10'); // false 
+
+// console.log(10 != 10); //  false 
+// console.log(10 != '10'); //  false 
+// console.log(10 !== '10'); //  true
+
+
+// String literals 
+
+let firstName = 'Sonu';
+let firstName2 = "Sonu";
+let firstName3 = `Sonu`;
+let lastName = 'Sharma';
+
+let welcomeMessage = 'Hi ' + firstName + ' ' + lastName + '!';
+let welcomeMessage2 = `Hi ${firstName} ${lastName}!`;
+
+
+// console.log(welcomeMessage);
+// console.log(welcomeMessage2);
+
+
+console.log(10 + 20); // yes 
+console.log(10 + 20) // X 
 
 
 
