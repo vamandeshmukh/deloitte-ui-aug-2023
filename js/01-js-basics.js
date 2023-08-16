@@ -14,18 +14,17 @@
 // let num2 = 20;
 // num2 = "abc";
 
-let someVar = 10;
-console.log(someVar);
-someVar = 20;
-console.log(someVar);
-console.log(typeof (someVar));
-someVar = "abc";
-console.log(someVar);
-console.log(typeof (someVar));
-someVar = false;
-console.log(someVar);
-console.log(typeof (someVar));
-
+// let someVar = 10;
+// console.log(someVar);
+// someVar = 20;
+// console.log(someVar);
+// console.log(typeof (someVar));
+// someVar = "abc";
+// console.log(someVar);
+// console.log(typeof (someVar));
+// someVar = false;
+// console.log(someVar);
+// console.log(typeof (someVar));
 
 // Datatypes in JS - 
 // primitive datatypes 
@@ -33,6 +32,51 @@ console.log(typeof (someVar));
 
 // primitive datatypes - number, string, boolean 
 // reference datatypes - array, object, class, function, ... 
+
+
+// let and const - 
+// const num1 = 10;
+// let num2 = 20;
+
+// console.log(num1);
+// console.log(num2);
+
+// num1 = 15;
+// num2 = 25;
+
+// console.log(num1);
+// console.log(num2);
+
+// other ways to declare variables 
+
+// num1 = 10; // don't use 
+// var num2 = 20; // don't use 
+// const num3 = 30; // use as default 
+// let num4 = 40; // also use this  
+
+
+// Reference datatypes in JS 
+// array, object, class, function etc 
+
+let arr1 = [10, 20, 'abc', 'def', false, 10.5];
+
+console.log(arr1[2]);
+
+console.log('all the elements - ');
+
+console.log(arr1);
+
+
+// self-learning assignment for JS - 
+// undefined 
+// NaN
+// null
+// differences among these three 
+// how to access array elemets 
+// operators in JS and their behaviour 
+
+
+
 
 
 
