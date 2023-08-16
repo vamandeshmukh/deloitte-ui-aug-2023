@@ -45,17 +45,36 @@
 
 // for in and for of loops in JS 
 
-const arr = [98, 96, 99, 97, 95];
+// const arr = [98, 96, 99, 97, 95];
 
-// for (let i = 0; i < arr.length; i++)
-//     console.log(arr[i]);
+// // for (let i = 0; i < arr.length; i++)
+// //     console.log(arr[i]);
 
-// for (let a in arr)
+// // for (let a in arr)
+// //     console.log(a);
+
+// for (let a of arr)
 //     console.log(a);
 
-for (let a of arr)
-    console.log(a);
+// falsy and truthy values in JS 
 
+// // falsy values -> false, 0, undefined, null, '' 
+// // truthy values -> any other values 
+
+// let firstName = 'Sonu';
+
+// if (firstName == true) {
+//     console.log('yes');
+// }
+
+// JS, ES, TS etc 
+
+// ES EcmaScript - specification for scripting languages 
+// JS JavaScript - actual implementation of the above 
+
+// Old JS - less features 
+// New JS, Modern JS, Nex gen JS - more features, compliant to ES6 onwards 
+  
 
 
 
