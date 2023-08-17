@@ -6,6 +6,7 @@ const empList = [
     { eid: 104, firstName: 'Ponu', salary: 99000 }
 ];
 
-empList.forEach(e => console.log(e.eid, e.firstName, e.salary));
+// empList.forEach(e => console.log(e.eid, e.firstName, e.salary));
 
 // display this data in the HTML table 
+
