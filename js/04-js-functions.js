@@ -45,7 +45,7 @@
 
 // default values to parameters 
 
-const addNums = (i = 2, j = 4) => { console.log(i + j); };
+// const addNums = (i = 2, j = 4) => { console.log(i + j); };
 
 // addNums();
 // addNums(10);
@@ -63,13 +63,35 @@ const addNums = (i = 2, j = 4) => { console.log(i + j); };
 // addOrConcat('abc', 'def');
 
 
+// const fun = (arg) => {
+//     console.log(arg.city);
+// };
+
+// // fun();
+// // fun({ eid: 101, firstName: 'Sonu' });
+// fun({ city: 'Pune' });
+// fun({ city: 'Pune', eid: 101, firstName: 'Sonu' });
+
+
+// const addGst = (amount) => {
+//     console.log(amount + (amount * 0.18));
+// };
+
+// addGst(100); // 100 is anonymous 
+
+// let billAmount = 200;
+// addGst(billAmount); // 200 has a name 
+
+
+
 const fun = (arg) => {
-    console.log(arg.city);
+    console.log('fun function called.');
+    arg();
 };
 
-fun(??);
+// fun(() => { });
 
-
+fun(() => { console.log('anonymous function called.'); });
 
 
 
