@@ -65,9 +65,31 @@
 //     });
 
 
+// // function that provides data 
+// const fun = () => {
+//     return new Promise((resolve, reject) => {
+//         let isDataAvailable = false; // true, false
+//         if (isDataAvailable)
+//             resolve({ message: 'Have fun!' });
+//         else
+//             reject({ message: 'Data is not available.' });
+//     });
+// };
+
+// // function call to consume the data 
+// fun()
+//     .then((response) => {
+//         console.log(response.message);
+//     })
+//     .catch((error) => {
+//         console.log(error.message);
+//     });
+
+// 3 solution - using async await  
+
 const fun = () => {
     return new Promise((resolve, reject) => {
-        let isDataAvailable = false; // true, false
+        let isDataAvailable = true; // true, false
         if (isDataAvailable)
             resolve({ message: 'Have fun!' });
         else
@@ -75,13 +97,11 @@ const fun = () => {
     });
 };
 
-fun()
-    .then((response) => {
-        console.log(response.message);
-    })
-    .catch((error) => {
-        console.log(error.message);
-    });
+const getFun = async () => {
+    let abc = await fun();
+    console.log(abc.message);
+};
 
+getFun();
 
 
