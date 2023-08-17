@@ -1,9 +1,4 @@
 
-// console.log('Hello world!');
-
-// console.log(5 + 5);
-
-
 const empList = [
     { eid: 101, firstName: 'Sonu', salary: 90000 },
     { eid: 102, firstName: 'Monu', salary: 98000 },
@@ -13,5 +8,4 @@ const empList = [
 
 empList.forEach(e => console.log(e.eid, e.firstName, e.salary));
 
-document.getElementById('emp-data')
-
+// display this data in the HTML table 
