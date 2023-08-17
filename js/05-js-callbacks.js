@@ -89,7 +89,7 @@
 
 const fun = () => {
     return new Promise((resolve, reject) => {
-        let isDataAvailable = true; // true, false
+        let isDataAvailable = false; // true, false
         if (isDataAvailable)
             resolve({ message: 'Have fun!' });
         else
@@ -97,9 +97,18 @@ const fun = () => {
     });
 };
 
+// const getFun = async () => {
+//     let abc = await fun();
+//     console.log(abc.message);
+// };
+
 const getFun = async () => {
-    let abc = await fun();
-    console.log(abc.message);
+    try {
+        let abc = await fun();
+        console.log(abc.message);
+    } catch (error) {
+        console.log(error.message);
+    }
 };
 
 getFun();
