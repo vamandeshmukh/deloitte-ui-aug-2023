@@ -13,4 +13,11 @@ const arr = [98, 95, 97, 96, 99];
 
 // arr.forEach((elem) => { console.log(elem); });
 
-arr.forEach(elem => console.log(elem));
+// arr.forEach(elem => console.log(elem));
+
+console.log(arr);
+console.log(arr.pop());
+console.log(arr);
+arr.push(85);
+console.log(arr);
+
