@@ -10,3 +10,39 @@ const empList = [
 
 // display this data in the HTML table 
 
+const empData = document.getElementById('emp-data');
+
+// // solution 1 - using string concat looping  
+// let temp = '';
+// empList.forEach((emp) => {
+//     console.log(emp);
+//     temp += `<tr> 
+//     <td>${emp.eid}</td>
+//     <td>${emp.firstName}</td>
+//     <td>${emp.salary}</td>
+//     </tr>`;
+// });
+// empData.innerHTML = temp;
+
+// solution 2 - using createElement and appendChild methods 
+empList.forEach((emp) => {
+    console.log(emp);
+    const row = document.createElement('tr');
+    row.innerHTML = `<td>${emp.eid}</td><td>${emp.firstName}</td><td>${emp.salary}</td>`;
+    empData.appendChild(row);
+});
+
+
+
+// another example 
+// const blogData = document.getElementById('blog-data');
+// fetch('https://jsonplaceholder.typicode.com/posts')
+//     .then(resp => resp.json())
+//     .then(resp => {
+//         resp.forEach(elem => {
+//             console.log(elem);
+//             const para = document.createElement('p');
+//             para.innerHTML = elem.title;
+//             blogData.appendChild(para);
+//         });
+//     });
