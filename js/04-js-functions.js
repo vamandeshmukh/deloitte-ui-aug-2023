@@ -89,7 +89,7 @@ const fun = (arg) => {
     arg();
 };
 
-// fun(() => { });
+// fun(() => { }); // pass another function as argument to fun function 
 
 fun(() => { console.log('anonymous function called.'); });
 
