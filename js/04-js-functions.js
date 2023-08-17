@@ -93,6 +93,10 @@ const fun = (arg) => {
 
 fun(() => { console.log('anonymous function called.'); });
 
+const anotherFun = () => {
+    console.log('named function called.');
+};
 
+fun(anotherFun);
 
 
