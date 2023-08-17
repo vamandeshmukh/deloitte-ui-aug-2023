@@ -35,3 +35,4 @@ obj.printEmpData();
 const obj2 = new Employee(101, 'Sonu', 90000.50);
 obj2.printEmpData();
 
+
