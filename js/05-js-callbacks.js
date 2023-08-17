@@ -32,20 +32,56 @@
 // let output = fun();
 // console.log(output.message);
 
-// solution 1 - callback 
+// // solution 1 - callback 
 
-const fun = (arg) => {
-    setTimeout(() => {
-        arg({ message: 'Have fun!' });
-    }, 2000);
+// const fun = (arg) => {
+//     setTimeout(() => {
+//         arg({ message: 'Have fun!' });
+//     }, 2000);
+// };
+
+// // fun((a) => { });
+
+// fun((a) => {
+//     console.log(a.message);
+// });
+
+// solution 2 - Promise 
+
+// Promise - 
+// 1. working on it - pending state 
+// 2. keep - resolve state 
+// 3. break - reject state   
+
+// const fun = () => {
+//     return new Promise((resolve, reject) => {
+//         resolve({ message: 'Have fun!' });
+//     });
+// };
+
+// fun()
+//     .then((response) => {
+//         console.log(response.message);
+//     });
+
+
+const fun = () => {
+    return new Promise((resolve, reject) => {
+        let isDataAvailable = false; // true, false
+        if (isDataAvailable)
+            resolve({ message: 'Have fun!' });
+        else
+            reject({ message: 'Data is not available.' });
+    });
 };
 
-// fun((a) => { });
-
-fun((a) => {
-    console.log(a.message);
-});
-
+fun()
+    .then((response) => {
+        console.log(response.message);
+    })
+    .catch((error) => {
+        console.log(error.message);
+    });
 
 
 
