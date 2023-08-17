@@ -47,9 +47,30 @@
 
 const addNums = (i = 2, j = 4) => { console.log(i + j); };
 
-addNums();
-addNums(10);
-addNums(10, 20);
-addNums(10, 20, 30);
+// addNums();
+// addNums(10);
+// addNums(10, 20);
+// addNums(10, 20, 30);
+
+
+// arguments to functions 
+
+// const addOrConcat = (a, b) => {
+//     console.log(a + b);
+// };
+
+// addOrConcat(10, 20);
+// addOrConcat('abc', 'def');
+
+
+const fun = (arg) => {
+    console.log(arg.city);
+};
+
+fun(??);
+
+
+
+
 
 
