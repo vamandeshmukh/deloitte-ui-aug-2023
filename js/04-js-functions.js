@@ -84,19 +84,26 @@
 
 
 
+// const fun = (arg) => {
+//     console.log('fun function called.');
+//     arg();
+// };
+
+// // fun(() => { }); // pass another function as argument to fun function 
+
+// fun(() => { console.log('anonymous function called.'); });
+
+// const anotherFun = () => {
+//     console.log('named function called.');
+// };
+
+// fun(anotherFun);
+
 const fun = (arg) => {
     console.log('fun function called.');
-    arg();
+    arg(10);
 };
 
-// fun(() => { }); // pass another function as argument to fun function 
-
-fun(() => { console.log('anonymous function called.'); });
-
-const anotherFun = () => {
-    console.log('named function called.');
-};
-
-fun(anotherFun);
+fun((num) => { console.log('anonymous function called with ' + num); });
 
 
