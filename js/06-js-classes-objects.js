@@ -19,9 +19,9 @@ class Employee {
         console.log(this.eid, this.firstName, this.salary);
     };
 
-    // printEmpData() {
-    //     console.log(this.eid, this.firstName, this.salary);
-    // };
+    printEmpData() {
+        console.log(this.eid, this.firstName, this.salary);
+    };
 
 }
 
