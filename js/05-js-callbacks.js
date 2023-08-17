@@ -1,5 +1,7 @@
 
-// JS 
+
+// JS - asynchronous nature of JS 
+// asynchronous == not synchronous
 
 // console.log('one');
 // console.log('two'); // delayed execution - 2 sec 
