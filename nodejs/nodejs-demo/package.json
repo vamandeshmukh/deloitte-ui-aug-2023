@@ -1,12 +1,16 @@
 {
   "name": "nodejs-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node demo code for Deloitte trainees 10 Aug 2023",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Vaman Deshmukh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.18.2"
+  }
 }
