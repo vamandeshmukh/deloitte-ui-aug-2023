@@ -1,4 +1,14 @@
 
+// steps 
+// on CMD run -
+// npm install 
+// npm start 
+// on browser open -
+// http://localhost:9090/
+// to stop, on CMD - 
+// Ctrl + C  
+
+
 const express = require('express');
 const app = express();
 const port = 9090;
