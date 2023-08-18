@@ -1,4 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body data-bs-theme="dark">
+    <div class="container">
+        <h1 class="display-1">Welcome User</h1>
+        <hr />
+        <div class="col-4 my-3 py-3">
+            <form class="form form-group" id="welcome-form" onsubmit="welcomeUser(); return false">
+                <input class="form-control" id="username" type="text" placeholder="Username" />
+                <input class="form-control my-3 btn btn-outline-light" type="submit" value="Enter" />
+            </form>
+            <p class="lead text-primary" id="welcome-message"></p>
+        </div>
+    </div>
+    <script src='./script.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+
+<!-- </html><!DOCTYPE html>
 <html>
 
 <head>
@@ -6,24 +38,19 @@
 </head>
 
 <body>
-    <h1>Welcome User</h1>
-    <hr />
-
     <div>
-        <form id="welcome-form" >
-            <input id="username" type="text" placeholder="Username" />
-            <br />
-            <input type="submit" value="Enter">
-        </form>
-        <p id="welcome-message"></p>
-
+        <h1>Welcome User</h1>
+        <hr />
+        <div>
+            <form id="welcome-form" onsubmit="welcomeUser(); return false">
+                <input id="username" type="text" placeholder="Username" />
+                <br />
+                <input type="submit" value="Enter" />
+            </form>
+            <p id="welcome-message"></p>
+        </div>
     </div>
     <script src='./script.js'></script>
 </body>
 
-</html>
-
-
-
-
-
+</html> -->
